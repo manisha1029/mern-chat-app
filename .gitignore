@@ -1,0 +1,74 @@
+# ---------------------------
+# 🌍 General
+# ---------------------------
+.DS_Store
+*.log
+.env
+.env.local
+.env.*.local
+.vscode/
+.idea/
+*.bak
+*.swp
+Thumbs.db
+ehthumbs.db
+
+# ---------------------------
+# ⚛️ client (React + Vite)
+# ---------------------------
+client/node_modules/
+client/dist/
+client/.env
+client/.env.local
+client/.vite/
+client/.parcel-cache/
+client/coverage/
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
+client/pnpm-debug.log*
+
+# Optional: lockfiles if you prefer not to commit them
+# client/package-lock.json
+# client/yarn.lock
+# client/pnpm-lock.yaml
+
+# ---------------------------
+# 🖥 server (Node + Express + Mongoose)
+# ---------------------------
+server/node_modules/
+server/dist/
+server/build/
+server/coverage/
+server/.env
+server/.env.local
+server/npm-debug.log*
+server/yarn-debug.log*
+server/yarn-error.log*
+server/pnpm-debug.log*
+
+# MongoDB data dumps or local DB folders (if any)
+dump/
+data/
+*.gz
+*.tar
+*.zip
+
+# ---------------------------
+# 🧪 Testing / Misc
+# ---------------------------
+coverage/
+*.test.js
+*.spec.js
+.nyc_output/
+jest-cache/
+jest-html-reporters-*
+
+# ---------------------------
+# 🗃️ OS and Editor Files
+# ---------------------------
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
