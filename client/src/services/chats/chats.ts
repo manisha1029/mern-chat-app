@@ -1,5 +1,6 @@
-import { get } from "../makeRequest";
+import { getWithAuth } from "../makeRequest";
 
-export function getChats(){
-    return get('/chats');
+
+export const getChats = async (token:string) => {
+    return await getWithAuth('/api/chat', token);
 }
