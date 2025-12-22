@@ -34,7 +34,7 @@ export async function post(url: string, data: object) {
     }
 }
 
-export async function getWithAuth(url: string, token: string) {
+export async function getWithAuth<T>(url: string, token: string):Promise<T> {
     try {
         const response = await api.get(url, {
             headers: {

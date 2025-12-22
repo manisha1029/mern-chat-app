@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Box } from "@chakra-ui/react";
 
 import { useChat } from "@/context/chatContext";
-import { getChats } from "../services/chats/chats";
 import { isArrayEmpty } from "../utility";
 import SideBar from "@/components/SideBar/SideBar";
 import MyChat from "@/components/Chat/MyChat";
